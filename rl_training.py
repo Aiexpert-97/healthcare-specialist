@@ -7,7 +7,6 @@ import os
 from dataclasses import dataclass, field
 from glob import glob
 from typing import Optional
-
 import torch
 from datasets import load_dataset
 from loguru import logger
@@ -43,7 +42,6 @@ PROMPT_TEMPLATE = (
     "Write a response that appropriately completes the request.\n\n"
     "### Instruction:\n{instruction}\n\n### Response: "
 )
-
 
 @dataclass
 class ScriptArguments:
