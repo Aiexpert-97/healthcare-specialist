@@ -4,7 +4,6 @@ from dataclasses import dataclass, field
 from glob import glob
 from itertools import chain
 from typing import Optional, List, Dict, Any, Mapping
-
 import numpy as np
 import torch
 from datasets import load_dataset
@@ -36,7 +35,6 @@ MODEL_CLASSES = {
     "baichuan": (AutoConfig, AutoModelForCausalLM, AutoTokenizer),
     "auto": (AutoConfig, AutoModelForCausalLM, AutoTokenizer),
 }
-
 
 @dataclass
 class ModelArguments:
